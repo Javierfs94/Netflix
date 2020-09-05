@@ -35,8 +35,9 @@ header
             color: #AAA
             text-decoration: none
             font-weight: normal
-            &:hover , &.active
+            &:hover , &.activo
                 color: #FFF
+
 .main-film
     @media screen and ( max-width:  800px)
         font-size: 14px
@@ -78,3 +79,75 @@ header
             color: #000
         i
             margin-right: 1.25em
+
+.recommended-movies    
+    margin-bottom: 70px
+    .container-title-controls
+        display: flex
+        justify-content: space-between
+        align-items: end
+        h3
+            color: #fff
+            font-size: 30px
+        .indicadores
+            @media screen and ( max-width:  800px)
+                display: none            
+            button
+                background: #fff
+                height: 3px
+                width: 10px
+                cursor: pointer
+                border: none
+                margin-right: 2px
+                &:hover, &.activo
+                    background: red                  
+    .main-container
+        display: flex
+        align-items: center
+        position: relative
+        .left-arrow, .right-arrow
+            @media screen and ( max-width:  800px)
+                display: none 
+            position: absolute
+            border: none
+            background: rgba(0, 0, 0, 0.3)
+            font-size: 40px
+            height: 50%
+            top: calc(50% - 25%)
+            line-height: 40px
+            width: 50px
+            color: #fff
+            cursor: pointer
+            z-index: 500
+            transition: .2s ease all
+            &:hover
+                background: rgba(0, 0, 0, 0.9)
+        .left-arrow
+            left: 0
+        .right-arrow
+            right: 0 
+        .carousel-container
+            @media screen and ( max-width:  800px)
+                overflow: visible
+            width: 100%
+            padding: 20px 0
+            overflow: hidden
+            scroll-behavior: smooth
+            .carousel
+                @media screen and ( max-width:  800px)
+                    display: grid
+                    grid-template-columns: repeat(3, 1fr)
+                    gap: 20px
+                display: flex
+                flex-wrap: nowrap
+                .movie
+                    min-width: 20%
+                    transition: .3s ease all
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3)
+                    &.hover
+                        transform: scale(1.2)
+                        transform-origin: center            
+                    img
+                        width: 100%
+                        vertical-align: top
+ 
