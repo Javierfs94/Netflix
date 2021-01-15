@@ -111,7 +111,7 @@ header nav a:hover, header nav a.activo {
   }
 }
 
-.main-film .boton {
+.main-film .button {
   background: rgba(0, 0, 0, 0.5);
   border: none;
   border-radius: 0.31em;
@@ -124,20 +124,20 @@ header nav a:hover, header nav a.activo {
   font-size: 1.12em;
 }
 
-.main-film .boton:hover {
+.main-film .button:hover {
   background: #fff;
   color: #000;
 }
 
-.main-film .boton i {
+.main-film .button i {
   margin-right: 1.25em;
 }
 
-.recommended-movies {
+.recommended-films {
   margin-bottom: 70px;
 }
 
-.recommended-movies .container-title-controls {
+.recommended-films .container-title-controls {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,18 +149,18 @@ header nav a:hover, header nav a.activo {
           align-items: end;
 }
 
-.recommended-movies .container-title-controls h3 {
+.recommended-films .container-title-controls h3 {
   color: #fff;
   font-size: 30px;
 }
 
 @media screen and (max-width: 800px) {
-  .recommended-movies .container-title-controls .indicadores {
+  .recommended-films .container-title-controls .indicators {
     display: none;
   }
 }
 
-.recommended-movies .container-title-controls .indicadores button {
+.recommended-films .container-title-controls .indicators button {
   background: #fff;
   height: 3px;
   width: 10px;
@@ -169,11 +169,11 @@ header nav a:hover, header nav a.activo {
   margin-right: 2px;
 }
 
-.recommended-movies .container-title-controls .indicadores button:hover, .recommended-movies .container-title-controls .indicadores button.activo {
+.recommended-films .container-title-controls .indicators button:hover, .recommended-films .container-title-controls .indicators button.active {
   background: red;
 }
 
-.recommended-movies .main-container {
+.recommended-films .main-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,7 +183,7 @@ header nav a:hover, header nav a.activo {
   position: relative;
 }
 
-.recommended-movies .main-container .left-arrow, .recommended-movies .main-container .right-arrow {
+.recommended-films .main-container .left-arrow, .recommended-films .main-container .right-arrow {
   position: absolute;
   border: none;
   background: rgba(0, 0, 0, 0.3);
@@ -200,24 +200,24 @@ header nav a:hover, header nav a.activo {
 }
 
 @media screen and (max-width: 800px) {
-  .recommended-movies .main-container .left-arrow, .recommended-movies .main-container .right-arrow {
+  .recommended-films .main-container .left-arrow, .recommended-films .main-container .right-arrow {
     display: none;
   }
 }
 
-.recommended-movies .main-container .left-arrow:hover, .recommended-movies .main-container .right-arrow:hover {
+.recommended-films .main-container .left-arrow:hover, .recommended-films .main-container .right-arrow:hover {
   background: rgba(0, 0, 0, 0.9);
 }
 
-.recommended-movies .main-container .left-arrow {
+.recommended-films .main-container .left-arrow {
   left: 0;
 }
 
-.recommended-movies .main-container .right-arrow {
+.recommended-films .main-container .right-arrow {
   right: 0;
 }
 
-.recommended-movies .main-container .carousel-container {
+.recommended-films .main-container .carousel-container {
   width: 100%;
   padding: 20px 0;
   overflow: hidden;
@@ -225,12 +225,12 @@ header nav a:hover, header nav a.activo {
 }
 
 @media screen and (max-width: 800px) {
-  .recommended-movies .main-container .carousel-container {
+  .recommended-films .main-container .carousel-container {
     overflow: visible;
   }
 }
 
-.recommended-movies .main-container .carousel-container .carousel {
+.recommended-films .main-container .carousel-container .carousel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,7 +239,7 @@ header nav a:hover, header nav a.activo {
 }
 
 @media screen and (max-width: 800px) {
-  .recommended-movies .main-container .carousel-container .carousel {
+  .recommended-films .main-container .carousel-container .carousel {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
@@ -248,7 +248,7 @@ header nav a:hover, header nav a.activo {
   }
 }
 
-.recommended-movies .main-container .carousel-container .carousel .movie {
+.recommended-films .main-container .carousel-container .carousel .film {
   min-width: 20%;
   -webkit-transition: .3s ease all;
   transition: .3s ease all;
@@ -256,14 +256,14 @@ header nav a:hover, header nav a.activo {
           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.recommended-movies .main-container .carousel-container .carousel .movie.hover {
+.recommended-films .main-container .carousel-container .carousel .film.hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transform-origin: center;
           transform-origin: center;
 }
 
-.recommended-movies .main-container .carousel-container .carousel .movie img {
+.recommended-films .main-container .carousel-container .carousel .film img {
   width: 100%;
   vertical-align: top;
 }

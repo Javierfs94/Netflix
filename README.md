@@ -1,4 +1,10 @@
 # Netflix
-Netflix style page
 
-Page: https://javierfs94.github.io/netflix/
+## Introduction
+
+Netflix style page made with HTML5, CSS3, JavaScript and jQuery.
+
+
+## Online page
+
+[Netflix-page](https://javierfs94.github.io/netflix/)
