@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Netflix style page made with HTML5, CSS3, JavaScript and jQuery.
+Netflix style page made with HTML5, CSS3 (SASS), JavaScript and jQuery.
 
 
 ## Online page
