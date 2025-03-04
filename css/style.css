@@ -1,13 +1,15 @@
+/* Reset general */
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+/* Estilos generales */
 body {
   background: #141414;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .container {
@@ -15,36 +17,28 @@ body {
   margin: auto;
 }
 
+/* Header */
 header {
   padding: 30px 0;
 }
 
 header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media screen and (max-width: 800px) {
   header .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     font-size: 30px;
   }
 }
 
 header .logo {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-weight: normal;
-  color: #E50914;
+  color: #e50914;
   font-size: 40px;
 }
 
@@ -55,30 +49,28 @@ header .logo {
 }
 
 header nav a {
-  color: #AAA;
+  color: #aaa;
   text-decoration: none;
   font-weight: normal;
 }
 
-header nav a:hover, header nav a.activo {
-  color: #FFF;
+header nav a:hover,
+header nav a.activo {
+  color: #fff;
 }
 
+/* Main Film */
 .main-film {
   font-size: 16px;
   min-height: 42.62em;
   color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/backdrop.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../img/backdrop.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url(../img/backdrop.jpg);
   background-position: center center;
   background-size: cover;
   margin-bottom: 3.12em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  align-items: end;
 }
 
 @media screen and (max-width: 800px) {
@@ -119,8 +111,7 @@ header nav a:hover, header nav a.activo {
   color: #fff;
   margin-right: 1.25em;
   cursor: pointer;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  transition: 0.3s ease all;
   font-size: 1.12em;
 }
 
@@ -133,20 +124,15 @@ header nav a:hover, header nav a.activo {
   margin-right: 1.25em;
 }
 
+/* Recommended Films */
 .recommended-films {
   margin-bottom: 70px;
 }
 
 .recommended-films .container-title-controls {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  justify-content: space-between;
+  align-items: end;
 }
 
 .recommended-films .container-title-controls h3 {
@@ -169,21 +155,20 @@ header nav a:hover, header nav a.activo {
   margin-right: 2px;
 }
 
-.recommended-films .container-title-controls .indicators button:hover, .recommended-films .container-title-controls .indicators button.active {
+.recommended-films .container-title-controls .indicators button:hover,
+.recommended-films .container-title-controls .indicators button.active {
   background: red;
 }
 
+/* Carrusel */
 .recommended-films .main-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   position: relative;
 }
 
-.recommended-films .main-container .left-arrow, .recommended-films .main-container .right-arrow {
+.recommended-films .main-container .left-arrow,
+.recommended-films .main-container .right-arrow {
   position: absolute;
   border: none;
   background: rgba(0, 0, 0, 0.3);
@@ -195,17 +180,18 @@ header nav a:hover, header nav a.activo {
   color: #fff;
   cursor: pointer;
   z-index: 500;
-  -webkit-transition: .2s ease all;
-  transition: .2s ease all;
+  transition: 0.2s ease all;
 }
 
 @media screen and (max-width: 800px) {
-  .recommended-films .main-container .left-arrow, .recommended-films .main-container .right-arrow {
+  .recommended-films .main-container .left-arrow,
+  .recommended-films .main-container .right-arrow {
     display: none;
   }
 }
 
-.recommended-films .main-container .left-arrow:hover, .recommended-films .main-container .right-arrow:hover {
+.recommended-films .main-container .left-arrow:hover,
+.recommended-films .main-container .right-arrow:hover {
   background: rgba(0, 0, 0, 0.9);
 }
 
@@ -231,40 +217,46 @@ header nav a:hover, header nav a.activo {
 }
 
 .recommended-films .main-container .carousel-container .carousel {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 @media screen and (max-width: 800px) {
   .recommended-films .main-container .carousel-container .carousel {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Menos columnas en móviles */
   }
 }
 
-.recommended-films .main-container .carousel-container .carousel .film {
-  min-width: 20%;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
-  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+.recommended-films .main-container .carousel-container .carousel .film:hover {
+  transform: scale(1.1);
+  transform-origin: center;
 }
 
-.recommended-films .main-container .carousel-container .carousel .film.hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transform-origin: center;
-          transform-origin: center;
+.recommended-films .main-container .carousel-container .carousel .film {
+  flex: 0 0 18%; /* Reducido para hacerlas más grandes */
+  min-width: 18%;
+  transition: transform 0.3s ease;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease all;
 }
 
 .recommended-films .main-container .carousel-container .carousel .film img {
   width: 100%;
+  max-width: 300px; /* Aumentado el tamaño máximo */
   vertical-align: top;
+  height: auto;
+  object-fit: cover;
 }
-/*# sourceMappingURL=style.css.map */
+
+@media screen and (min-width: 1200px) {
+  .recommended-films .main-container .carousel-container .carousel .film {
+    flex: 0 0 15%; /* Más grandes en pantallas grandes */
+    min-width: 15%;
+  }
+
+  .recommended-films .main-container .carousel-container .carousel .film img {
+    max-width: 350px; /* Mayor tamaño en pantallas grandes */
+  }
+}
