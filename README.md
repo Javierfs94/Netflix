@@ -13,8 +13,11 @@ The goal is to replicate the look and feel of Netflix’s interface, focusing on
 ## 🎯 Features
 
 ✔️ Netflix-inspired design
+
 ✔️ Responsive layout for desktop and mobile devices
+
 ✔️ Smooth scrolling and hover effects
+
 ✔️ Carousel-style sections
 
 ## 🛠️ Technologies Used
